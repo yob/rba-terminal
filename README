@@ -1,6 +1,20 @@
 This package can be used to setup a linux box as a thin terminal
 at rainbow books.
 
+Package Building
+--------------------------------------------------------
+To build the package, perform a git checkout and then run:
+
+  git-buildpackage
+
+Package Installation
+--------------------------------------------------------
+To install the compiled package:
+
+  dpkg -i rbaterminal_1.0.0_all.deb
+
+Post Installation
+--------------------------------------------------------
 Once it's installed, the following configuration steps need to be performed:
 
 - add a new user called auto, password auto
