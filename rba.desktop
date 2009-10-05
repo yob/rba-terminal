@@ -1,0 +1,6 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=RBA
+Comment=Rainbow Books Terminal Services
+Exec=/usr/bin/rbadesktop
+Type=Application

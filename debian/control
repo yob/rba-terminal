@@ -1,0 +1,15 @@
+Source: rbaterminal
+Section: utils
+Priority: optional
+Maintainer: James Healy <jimmy@deefa.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+Homepage: http://www.rainbowbooks.com.au
+
+Package: rbaterminal
+Architecture: all
+Depends: gdm, hal, openssh-client, openssh-server, rdesktop, sudo, x11-xserver-utils, x11-session-utils, xinit, xserver-xorg, xterm
+Description: Meta packaghe and files for setting up an RDP thin client at rainbow
+  Contains a few files needed to configure a Linux box to act as a terminal
+  services thin client at Rainbow. Some setup is required after the
+  installation, see the README

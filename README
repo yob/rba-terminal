@@ -1,0 +1,14 @@
+This package can be used to setup a linux box as a thin terminal
+at rainbow books.
+
+Once it's installed, the following configuration steps need to be performed:
+
+- add a new user called auto, password auto
+- login to X as auto, changing the session to RBA first
+- edit /etc/gdm/gdm.conf and add the following 2 lines to the [daemon] section:
+  AutomaticLoginEnable=true
+  AutomaticLogin=auto
+- edit /etc/sudoers and add the following line:
+  jh  ALL=NOPASSWD: /sbin/shutdown
+- restart gdm:
+  invoke-rc.d gdm restart
