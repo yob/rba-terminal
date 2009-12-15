@@ -1,3 +1,3 @@
 #!/bin/sh
-rdesktop -f -x broadband 192.168.0.9
+rdesktop -f -n `hostname`-`date +%b%Y` -x broadband 192.168.0.9
 sudo shutdown -h now
