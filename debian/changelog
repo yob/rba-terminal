@@ -1,5 +1,12 @@
+rbaterminal (1.1.0) unstable; urgency=low
+
+  * change hostname passed to rdesktop each month
+  * conflict with openbox
+
+ -- james healy <jimmy@deefa.com>  Tues, 15 Dec 2009 13:05:00 +1100
+
 rbaterminal (1.0.0) unstable; urgency=low
 
-  * Initial package creation
+  * initial package creation
 
- -- James Healy <jimmy@deefa.com>  Mon, 5 Oct 2009 17:55:08 +1100
+ -- james healy <jimmy@deefa.com>  mon, 5 oct 2009 17:55:08 +1100
