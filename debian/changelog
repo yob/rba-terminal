@@ -1,6 +1,7 @@
 rbaterminal (1.2.0) unstable; urgency=low
 
   * use hostname as the default username
+  * upgrade "Experience" to LAN
 
  -- James Healy <jimmy@deefa.com>  Wed, 24 Feb 2010 13:05:00 +1100
 
