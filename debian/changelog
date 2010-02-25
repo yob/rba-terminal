@@ -1,3 +1,9 @@
+rbaterminal (1.2.0) unstable; urgency=low
+
+  * use hostname as the default username
+
+ -- James Healy <jimmy@deefa.com>  Wed, 24 Feb 2010 13:05:00 +1100
+
 rbaterminal (1.1.0) unstable; urgency=low
 
   * change hostname passed to rdesktop each month
