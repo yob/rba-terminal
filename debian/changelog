@@ -1,3 +1,14 @@
+rbaterminal (1.3.0) unstable; urgency=low
+
+  * improve rbadesktop wrapper to retry connections after a failure
+  * depend on rdesktop > 1.6.0
+    * 1.6.0 is the current stable release, we need the exit code patch
+      that is in trunk. Hopefully 1.7 is released soon.
+    * in the meantime, I've built a "1.6.1" debian package that
+      includes the patch
+
+ -- James Healy <jimmy@deefa.com>  Tue, 6 Apr 2010 15:44:00 +1000
+
 rbaterminal (1.2.0) unstable; urgency=low
 
   * use hostname as the default username
