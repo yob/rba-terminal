@@ -1,3 +1,24 @@
 #!/bin/sh
-rdesktop -f -a 16 -u `hostname` -n `hostname`-`date +%b%Y` -x lan 192.168.0.9
+
+# Wrapper around the rdesktop binary for our thin terminals
+#
+# Connects the server, reconnecting automagically in the event of an issue.
+# If rdesktop exits normally (with a 0 exit code) then the machine is shut down
+#
+# Uses a new hostname every month to bypass windows server license issues.
+
+HOSTNAME="`hostname`-`date +%b%Y`"
+USER="`hostname`"
+SERVER="192.168.0.9"
+CMD="rdesktop -f -a 16 -u $USER -n $HOSTNAME -x lan $SERVER"
+COUNT=0
+
+while [ "`$CMD > /dev/null 2>&1 && echo success`" != "success" ] && [ $COUNT -lt 60 ];
+do
+  COUNT=`expr $COUNT + 1`
+  echo "disconnected, attempting to reconnect ($COUNT)"
+  sleep 1;
+done
+
+echo "terminal server connection closed, shutting down"
 sudo shutdown -h now
