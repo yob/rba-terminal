@@ -15,7 +15,7 @@ COUNT=0
 
 while [ "`$CMD > /dev/null 2>&1 && echo success`" != "success" ] && [ $COUNT -lt 60 ];
 do
-  COUNT=`expr $COUNT + 1`
+  COUNT=$((COUNT+1))
   echo "disconnected, attempting to reconnect ($COUNT)"
   sleep 1;
 done
