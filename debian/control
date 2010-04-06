@@ -3,7 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: James Healy <jimmy@deefa.com>
 Build-Depends: debhelper (>= 7)
-Standards-Version: 3.8.3
+Standards-Version: 3.8.4
 Homepage: http://www.rainbowbooks.com.au
 
 Package: rbaterminal
