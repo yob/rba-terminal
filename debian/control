@@ -8,7 +8,7 @@ Homepage: http://www.rainbowbooks.com.au
 
 Package: rbaterminal
 Architecture: all
-Depends: gdm, hal, openssh-client, openssh-server, rdesktop (>1.6.0), sudo, x11-xserver-utils, x11-session-utils, xinit, xserver-xorg, xterm
+Depends: gdm, hal, openssh-client, openssh-server, rdesktop (>>1.6.0), sudo, x11-xserver-utils, x11-session-utils, xinit, xserver-xorg, xterm
 Conflicts: openbox
 Description: Meta packaghe and files for setting up an RDP thin client at rainbow
   Contains a few files needed to configure a Linux box to act as a terminal
